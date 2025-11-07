@@ -19,4 +19,17 @@ def modulo11_checksum(isbn_number: str):
     total += check_digit
     return total % 11 == 0
 
+if __name__ == "__main__":
+    print("Проверка ISBN-10. Для выхода введите -1")
 
+    while True:
+        isbn = input("Введите ISBN: ")
+
+        if isbn == "-1":
+            print("Выход")
+            break
+
+        if modulo11_checksum(isbn):
+            print("correct")
+        else:
+            print("incorrect")
