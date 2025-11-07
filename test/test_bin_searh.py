@@ -28,3 +28,6 @@ def test_last():
 def test_invaild_input():
      assert bin_search(None, 5) == -1
      assert bin_search([1, 2, "с"], 5) == -1
+
+def test_unsorted_array():
+    assert bin_search([3, 1, 2], 2) == -1

@@ -9,6 +9,10 @@ def bin_search(xs: list[int], x: int):
     for i in xs:
         if not isinstance(i, int):
             return -1
+
+    if xs != sorted(xs):
+        return -1
+
     left, right = 0, len(xs) - 1
 
     while left <= right:
