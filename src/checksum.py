@@ -23,11 +23,11 @@ print("Проверка ISBN-10, чтобы вйти напишите -1")
 
 while True:
     isbn = input("Введите строку: ")
-    
+
     if isbn == "-1":
         print("Выход")
         break
-    
+
     if modulo11_checksum(isbn):
         print("correct")
     else:
