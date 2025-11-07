@@ -14,3 +14,6 @@ def test_wrong_length():
 def test_bad():
     assert not modulo11_checksum("2-266-11156-3")
 
+def test_input():
+    assert not modulo11_checksum(None)
+    assert not modulo11_checksum("")

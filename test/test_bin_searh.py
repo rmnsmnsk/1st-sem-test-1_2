@@ -16,11 +16,15 @@ def test_single():
     assert bin_search([6], 6) == 0
     assert bin_search([2], 3) == -1
 
-def empty():
+def test_empty():
     assert bin_search([], 8) == -1
 
-def first():
-    assert bin_search([5, 2, 3, 4], 5) == 0
+def test_first():
+    assert bin_search([1, 2, 3, 4], 1) == 0
 
-def last():
+def test_last():
     assert bin_search([1, 2, 3, 8], 8) == 3
+
+def test_invaild_input():
+     assert bin_search(None, 5) == -1
+     assert bin_search([1, 2, "с"], 5) == -1
