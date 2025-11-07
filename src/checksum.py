@@ -16,5 +16,5 @@ def modulo11_checksum(isbn_number: str):
 
     total += check_digit
     
-    return checksum % 11 == 0
+    return total % 11 == 0
 
